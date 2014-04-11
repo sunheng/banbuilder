@@ -13,6 +13,10 @@ Instruction:
           $badwords = $us_wordlist->getBadWords();
           $this->load->library('banbuilder/Censor_Function');
           $censorFunction = new Censor_Function();
+          
+          To avoid having to manual load the libraries everytime, just add 
+          'banbuilder/lang/EN_US_WORDLIST_REGEX' and 'banbuilder/Censor_Function' 
+          to $autoload['libraries'] in config.php.
 
      3. Call any methods in Censor_Function;     
 
