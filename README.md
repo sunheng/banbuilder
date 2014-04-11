@@ -1,3 +1,22 @@
+Banbuilder CodeIgniter
+=======================
+
+Converted existing files into OOP to run in CI libraries.
+
+Instruction: 
+     
+     1. Place the banbuilder_ci folder into application/libraries/
+     2. Load the library:
+
+          $this->load->library('banbuilder/lang/EN_US_WORDLIST_REGEX');
+          $us_wordlist = new EN_US_WORDLIST_REGEX();
+          $badwords = $us_wordlist->getBadWords();
+          $this->load->library('banbuilder/Censor_Function');
+          $censorFunction = new Censor_Function();
+
+     3. Call any methods in Censor_Function;     
+
+
 [![Flattr this git repo](http://api.flattr.com/button/flattr-badge-large.png)](https://flattr.com/submit/auto?user_id=snipe&url=https://github.com/snipe/banbuilder&title=banbuilder&language=PHP&tags=github&category=software)
 
 Banbuilder
